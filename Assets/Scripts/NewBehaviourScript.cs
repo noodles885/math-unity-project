@@ -24,13 +24,29 @@ public class NewBehaviourScript : MonoBehaviour
     public int WoodChestLegendary;
     public List<string> WoodChestsDrop;
 
-    [Header("WoodChestDrops")]
+    [Header("BronzeChestDrops")]
     public int BronzeChestCommon;
     public int BronzeChestUncommon;
     public int BronzeChestRare;
     public int BronzeChestEpic;
     public int BronzeChestLegendary;
     public List<string> BronzeChestsDrop;
+
+    [Header("SilverChestDrops")]
+    public int SilverChestCommon;
+    public int SilverChestUncommon;
+    public int SilverChestRare;
+    public int SilverChestEpic;
+    public int SilverChestLegendary;
+    public List<string> SilverChestsDrop;
+
+    [Header("GoldChestDrops")]
+    public int GoldChestCommon;
+    public int GoldChestUncommon;
+    public int GoldChestRare;
+    public int GoldChestEpic;
+    public int GoldChestLegendary;
+    public List<string> GoldChestsDrop;
 
     void Start()
     {
@@ -113,6 +129,57 @@ public class NewBehaviourScript : MonoBehaviour
             BronzeChestsDrop.Add(new string("BronzeChestLegendary"));
         }
 
+        //Silver chests drops
+        for (int i = 0; i < SilverChestCommon; i++)
+        {
+            SilverChestsDrop.Add(new string("SilverChestCommon"));
+        }
+
+        for (int i = 0; i < SilverChestUncommon; i++)
+        {
+            SilverChestsDrop.Add(new string("SilverChestCommon"));
+        }
+
+        for (int i = 0; i < SilverChestRare; i++)
+        {
+            SilverChestsDrop.Add(new string("SilverChestRare"));
+        }
+
+        for (int i = 0; i < SilverChestEpic; i++)
+        {
+            SilverChestsDrop.Add(new string("SilverChestEpic"));
+        }
+
+        for (int i = 0; i < SilverChestLegendary; i++)
+        {
+            SilverChestsDrop.Add(new string("SilverChestLegendary"));
+        }
+
+        //Gold chests drops
+        for (int i = 0; i < GoldChestCommon; i++)
+        {
+            GoldChestsDrop.Add(new string("GoldChestCommon"));
+        }
+
+        for (int i = 0; i < GoldChestUncommon; i++)
+        {
+            GoldChestsDrop.Add(new string("GoldChestCommon"));
+        }
+
+        for (int i = 0; i < GoldChestRare; i++)
+        {
+            GoldChestsDrop.Add(new string("GoldChestRare"));
+        }
+
+        for (int i = 0; i < GoldChestEpic; i++)
+        {
+            GoldChestsDrop.Add(new string("GoldChestEpic"));
+        }
+
+        for (int i = 0; i < GoldChestLegendary; i++)
+        {
+            GoldChestsDrop.Add(new string("GoldChestLegendary"));
+        }
 
     }
 
@@ -131,6 +198,24 @@ public class NewBehaviourScript : MonoBehaviour
 
             }
             else if (ChestAwarded == "BronzeChest")
+            {
+
+                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+
+            }
+            else if (ChestAwarded == "SilverChest")
+            {
+
+                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+
+            }
+            else if (ChestAwarded == "GoldChest")
+            {
+
+                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+
+            }
+            else if (ChestAwarded == "PlatinumChest")
             {
 
                 PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
