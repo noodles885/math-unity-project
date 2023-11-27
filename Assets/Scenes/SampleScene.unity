@@ -340,24 +340,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChestAwarded: 
   PrizeAwarded: 
-  WoodChest: 100
-  BronzeChest: 50
-  SilverChest: 25
-  GoldChest: 5
+  WoodChest: 400
+  BronzeChest: 200
+  SilverChest: 50
+  GoldChest: 18
   PlatinumChest: 1
   ChestTypes: []
-  woodChestCommon: 500
-  WoodChestUncommon: 100
-  WoodChestRare: 50
-  WoodChestEpic: 25
+  woodChestCommon: 100
+  WoodChestUncommon: 50
+  WoodChestRare: 25
+  WoodChestEpic: 5
   WoodChestLegendary: 1
   WoodChestsDrop: []
-  BronzeChestCommon: 0
-  BronzeChestUncommon: 0
-  BronzeChestRare: 0
-  BronzeChestEpic: 0
-  BronzeChestLegendary: 0
+  BronzeChestCommon: 75
+  BronzeChestUncommon: 75
+  BronzeChestRare: 25
+  BronzeChestEpic: 5
+  BronzeChestLegendary: 1
   BronzeChestsDrop: []
+  SilverChestCommon: 60
+  SilverChestUncommon: 70
+  SilverChestRare: 40
+  SilverChestEpic: 8
+  SilverChestLegendary: 3
+  SilverChestsDrop: []
+  GoldChestCommon: 50
+  GoldChestUncommon: 55
+  GoldChestRare: 56
+  GoldChestEpic: 15
+  GoldChestLegendary: 5
+  GoldChestsDrop: []
+  PlatinumChestCommon: 50
+  PlatinumChestUncommon: 50
+  PlatinumChestRare: 50
+  PlatinumChestEpic: 20
+  PlatinumChestLegendary: 11
+  PlatinumChestsDrop: []
 --- !u!4 &1970029336
 Transform:
   m_ObjectHideFlags: 0

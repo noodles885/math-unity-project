@@ -47,6 +47,14 @@ public class NewBehaviourScript : MonoBehaviour
     public int GoldChestEpic;
     public int GoldChestLegendary;
     public List<string> GoldChestsDrop;
+    
+    [Header("PlatinumChestDrops")]
+    public int PlatinumChestCommon;
+    public int PlatinumChestUncommon;
+    public int PlatinumChestRare;
+    public int PlatinumChestEpic;
+    public int PlatinumChestLegendary;
+    public List<string> PlatinumChestsDrop;
 
     void Start()
     {
@@ -80,7 +88,7 @@ public class NewBehaviourScript : MonoBehaviour
         // Wood chests drops
         for (int i = 0; i < woodChestCommon; i++)
         {
-            WoodChestsDrop.Add(new string("woodChestCommon"));
+            WoodChestsDrop.Add(new string("WoodChestCommon"));
         }
 
         for (int i = 0; i < WoodChestUncommon; i++)
@@ -181,6 +189,34 @@ public class NewBehaviourScript : MonoBehaviour
             GoldChestsDrop.Add(new string("GoldChestLegendary"));
         }
 
+
+        //Platinum chests drops
+        for (int i = 0; i < PlatinumChestCommon; i++)
+        {
+            PlatinumChestsDrop.Add(new string("PlatinumChestCommon"));
+        }
+
+        for (int i = 0; i < PlatinumChestUncommon; i++)
+        {
+            PlatinumChestsDrop.Add(new string("PlatinumChestCommon"));
+        }
+
+        for (int i = 0; i < PlatinumChestRare; i++)
+        {
+            PlatinumChestsDrop.Add(new string("PlatinumChestRare"));
+        }
+
+        for (int i = 0; i < PlatinumChestEpic; i++)
+        {
+            PlatinumChestsDrop.Add(new string("PlatinumChestEpic"));
+        }
+
+        for (int i = 0; i < PlatinumChestLegendary; i++)
+        {
+            PlatinumChestsDrop.Add(new string("PlatinumChestLegendary"));
+        }
+
+
     }
 
 
@@ -200,25 +236,25 @@ public class NewBehaviourScript : MonoBehaviour
             else if (ChestAwarded == "BronzeChest")
             {
 
-                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+                PrizeAwarded = BronzeChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
 
             }
             else if (ChestAwarded == "SilverChest")
             {
 
-                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+                PrizeAwarded = SilverChestsDrop[Random.Range(0, SilverChestsDrop.Count)];
 
             }
             else if (ChestAwarded == "GoldChest")
             {
 
-                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+                PrizeAwarded = GoldChestsDrop[Random.Range(0, GoldChestsDrop.Count)];
 
             }
             else if (ChestAwarded == "PlatinumChest")
             {
 
-                PrizeAwarded = WoodChestsDrop[Random.Range(0, BronzeChestsDrop.Count)];
+                PrizeAwarded = PlatinumChestsDrop[Random.Range(0, PlatinumChestsDrop.Count)];
 
             }
             else 
